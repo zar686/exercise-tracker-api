@@ -3,9 +3,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-// require route files
-const exampleRoutes = require('./app/routes/example_routes')
-const userRoutes = require('./app/routes/user_routes')
+// environment variables in dot env files
+require('dotenv').config()
 
 // require middleware
 const errorHandler = require('./lib/error_handler')
@@ -60,14 +59,31 @@ app.use(express.urlencoded({ extended: true }))
 // log each request as it comes in for debugging
 app.use(requestLogger)
 
-// register route files
-app.use(exampleRoutes)
-app.use(userRoutes)
-
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
 // passed any error messages from them
 app.use(errorHandler)
+
+// Database URI that we get from MONGODB dashboard
+mongoose.connect(db, {
+  useNewUrlParser: true,
+  useCreateIndex: true
+})
+
+const uri = process.env.ATLAS_URI
+mongoose.connect(uri, { useUnifiedTopology: true })
+const connection = mongoose.connection
+connection.once('open', () => {
+  console.log('MongoDB database connection established successfully')
+})
+
+// require router files
+const exercisesRouter = require('./app/routes/exercises')
+const userRouter = require('./app/routes/users')
+
+// register route files
+app.use('/exercises', exercisesRouter)
+app.use('/users', userRouter)
 
 // run API on designated port (4741 in this case)
 app.listen(port, () => {
