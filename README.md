@@ -8,6 +8,8 @@ Token authentication is incorporated into the app with the help of crypto (to ge
 Deployed API
 DevSpot App
 DevSpot Client GitHub Repo
+https://github.com/zar686/exercise-tracker-api
+https://github.com/zar686/exercise-tracker-client
 
 # Planning Story
 
