@@ -10,6 +10,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true
+  },
+  hashedPassword: {
+    type: String,
+    required: true
+  },
+  token: String,
+  firstName: {
+    type: String,
+    required: true
   }
 }, {
   timestamps: true,
