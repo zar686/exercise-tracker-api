@@ -5,11 +5,11 @@ Token authentication is incorporated into the app with the help of crypto (to ge
 
 # Important Links
 
-Deployed API
-DevSpot App
-DevSpot Client GitHub Repo
-https://github.com/zar686/exercise-tracker-api
-https://github.com/zar686/exercise-tracker-client
+- Deployed API - https://blooming-island-23928.herokuapp.com/
+- Fit Tracker App - https://zar686.github.io/exercise-tracker-client/
+- Fit Tracker Client GitHub Repo - https://github.com/zar686/exercise-tracker-client
+- Fit Tracker API GitHub Repo - https://github.com/zar686/exercise-tracker-api
+
 
 # Planning Story
 
