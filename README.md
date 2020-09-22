@@ -17,46 +17,46 @@ The vision for DevSpot is to be the Twitter for software developers, where they 
 
 # API End Points
 
-Users
-Verb	URI Pattern	Controller#Action	Token Required
-POST	/sign-up	users#sign-up	false
-POST	/sign-in	users#sign-in	false
-PATCH	/change-password	users#change-password	true
-PATCH	/user-info	users#update-info.	true
-GET	/users	users#index	true
-GET	/users/:id	users#show	true
-DELETE	/sign-out	users#sign-out	true
-Posts
-Verb	URI Pattern	Controller#Action	Token Required
-GET	/posts	posts#index	true
-POST	/posts	posts#create	true
-PATCH	/posts/:id	posts#update	true
-DELETE	/posts/:id	posts#delete	true
-All data returned from the API is formatted as JSON.
+-Users
+-Verb	URI Pattern	Controller#Action	Token Required
+-POST	/sign-up	users#sign-up	false
+-POST	/sign-in	users#sign-in	false
+-PATCH	/change-password	users#change-password	true
+-PATCH	/user-info	users#update-info.	true
+-GET	/users	users#index	true
+-GET	/users/:id	users#show	true
+-DELETE	/sign-out	users#sign-out	true
+-Posts
+-Verb	URI Pattern	Controller#Action	Token Required
+-GET	/posts	posts#index	true
+-POST	/posts	posts#create	true
+-PATCH	/posts/:id	posts#update	true
+-DELETE	/posts/:id	posts#delete	true
+-All data returned from the API is formatted as JSON.
 
 # User Stories
 
-As an unregistered user, I would like to sign up with email and password.
-As a registered user, I would like to sign in with email and password.
-As a signed in user, I would like to change password.
-As a signed in user, I would like to sign out.
-As a signed in user, I would like to add a post to my wall.
-As a signed in user, I would like to update a post on my wall.
-As a signed in user, I would like to delete a post on my wall.
-As a signed in user, I would like to see all my posts.
-As a signed in user, I would like to view a list of other users and view their walls.
+-As an unregistered user, I would like to sign up with email and password.
+-As a registered user, I would like to sign in with email and password.
+-As a signed in user, I would like to change password.
+-As a signed in user, I would like to sign out.
+-As a signed in user, I would like to add a post to my wall.
+-As a signed in user, I would like to update a post on my wall.
+-As a signed in user, I would like to delete a post on my wall.
+-As a signed in user, I would like to see all my posts.
+-As a signed in user, I would like to view a list of other users and view their walls.
 
 # Technologies Used
 
-Express
-MongoDB
-Mongoose
-JavaScript
-NodeJS
-nodemon
-Passport
-bcrypt
-crypto
+-Express
+-MongoDB
+-Mongoose
+-JavaScript
+-NodeJS
+-nodemon
+-Passport
+-bcrypt
+-crypto
 
 # Future Iterations
 
