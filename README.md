@@ -64,7 +64,8 @@ A future iteration of the app would support image upload of profile pictures as 
 
 # Entity Relationship Diagram (ERD)
 
-https://imgur.com/a/vMKguIs
+![image](https://user-images.githubusercontent.com/28852632/94066783-dbc96080-fde4-11ea-9611-09d907d2a69f.png)
+
 
 # Setup & Installation
 
