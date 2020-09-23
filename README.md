@@ -65,3 +65,17 @@ A future iteration of the app would support image upload of profile pictures as 
 # Entity Relationship Diagram (ERD)
 
 https://imgur.com/a/vMKguIs
+
+# Setup & Installation
+
+- Download this template.
+- Move the .zip file to your sei/projects/ directory and Unzip it (creating a folder) -- NOTE: if the folder was already unzipped, use the mv command line to move it to the - sei/projects/ directory.
+- Rename the directory from p4-api -> your-app-name.
+- Empty README.md and fill with your own content.
+- Move into the new project and git init.
+- Replace all instances of 'express-api-template' with your app name.
+- Install dependencies with npm install.
+- Ensure that you have nodemon installed by running npm install -g nodemon.
+- Ensure the API is functioning properly by running npm run server.
+- Once everything is working, make an initial commit.
+- Follow the steps in express-api-deployment-guide
